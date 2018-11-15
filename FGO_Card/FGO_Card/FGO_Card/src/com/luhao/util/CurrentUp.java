@@ -75,42 +75,23 @@ public class CurrentUp {
 	public int getCount(int type, int rarity, int isUp) {
 		int count = 0;
 		if (type == 0) {
-			if (isUp == 0) {
-				if (rarity == 3) {
-					count = servants3.size();
-				} else if (rarity == 4) {
-					count = servants4.size();
-				} else {
-					count = servants5.size();
-				}
+			if (rarity == 3) {
+				count = upServants3.size();
+			} else if (rarity == 4) {
+				count = upServants4.size();
 			} else {
-				if (rarity == 3) {
-					count = upServants3.size();
-				} else if (rarity == 4) {
-					count = upServants4.size();
-				} else {
-					count = upServants5.size();
-				}
+				count = upServants5.size();
 			}
 		} else {
-			if (isUp == 0) {
-				if (rarity == 3) {
-					count = craftEssences3.size();
-				} else if (rarity == 4) {
-					count = craftEssences4.size();
-				} else {
-					count = craftEssences5.size();
-				}
+			if (rarity == 3) {
+				count = upCraftEssences3.size();
+			} else if (rarity == 4) {
+				count = upCraftEssences4.size();
 			} else {
-				if (rarity == 3) {
-					count = upCraftEssences3.size();
-				} else if (rarity == 4) {
-					count = upCraftEssences4.size();
-				} else {
-					count = upCraftEssences5.size();
-				}
+				count = upCraftEssences5.size();
 			}
 		}
+		
 		return count;
 	}
 	
